@@ -1,34 +1,9 @@
 {
-  "name": "nodejsstarterkit",
-  "version": "2.0.1",
+  "name": "acn-wave",
+  "version": "0.0.1",
   "private": true,
-  "description": "Node.js Starter Kit",
-  "author": "Timur Shemsedinov <timur.shemsedinov@gmail.com>",
+  "description": "Wave сервер",
   "license": "MIT",
-  "keywords": [
-    "server",
-    "api",
-    "rpc",
-    "rest",
-    "service",
-    "web",
-    "router",
-    "routing",
-    "cluster",
-    "cache",
-    "http",
-    "https",
-    "websocket",
-    "websockets",
-    "samdboxing",
-    "isolation",
-    "context",
-    "framework",
-    "scale",
-    "scaling",
-    "thread",
-    "worker"
-  ],
   "main": "server.js",
   "scripts": {
     "test": "npm run -s lint && node test/all.js",
@@ -37,12 +12,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/HowProgrammingWorks/NodejsStarterKit.git"
+    "url": "git+https://github.com/acn-support/wave.git"
   },
   "bugs": {
-    "url": "https://github.com/HowProgrammingWorks/NodejsStarterKit/issues"
+    "url": "https://github.com/acn-support/wave/issues"
   },
-  "homepage": "https://github.com/HowProgrammingWorks/NodejsStarterKit",
+  "homepage": "https://github.com/acn-support/wave",
   "engines": {
     "node": ">=12.5.0"
   },
