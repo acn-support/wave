@@ -1,2 +1,2 @@
-CREATE USER marcus WITH PASSWORD 'marcus';
-CREATE DATABASE application OWNER marcus;
+CREATE USER acn WITH PASSWORD 'acn';
+CREATE DATABASE acn OWNER acn;
