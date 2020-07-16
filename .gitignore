@@ -2,3 +2,13 @@ node_modules
 *.log
 *.pem
 .DS_Store
+
+static/images
+
+src/**/images
+src/**/ui
+src/**/iconfont
+
+src/**/*.d.ts
+src/**/*s.map
+src/*/*/*.js
