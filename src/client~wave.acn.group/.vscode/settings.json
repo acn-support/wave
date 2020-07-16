@@ -1,0 +1,9 @@
+{
+  "editor.fontFamily": "JetBrains Mono",
+  "editor.tabSize": 2,
+  "files.exclude": {
+    "{**/*d.ts,**/*s.map}": true,
+    "{elements/**/*.js,pages/**/*.js,styles/**/*.js}": true,
+    "**/.DS_Store": false
+  }
+}
