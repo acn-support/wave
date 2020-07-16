@@ -37,7 +37,7 @@ const signIn = async () => {
   try {
     await api.status();
   } catch (err) {
-    await api.signIn({ login: 'marcus', password: 'marcus' });
+    await api.signIn({ login: 'user', password: 'nopassword' });
   }
   const methods = await api.introspection();
   api = buildAPI(methods, socket);
