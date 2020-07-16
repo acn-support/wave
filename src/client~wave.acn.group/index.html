@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="АКС - провайдер высокоскоростного интернета и ИТ-услуг">
+
+    <title>АКС</title>
+
+    <base href="/">
+
+    <link rel="icon" href="images/wave.acn.group/manifest/favicon.ico">
+
+    <!-- https://goo.gl/OOhYW5 -->
+    <link rel="manifest" href="manifest.json">
+    <!-- https://goo.gl/qRE0vM -->
+    <meta name="theme-color" content="#3f51b5">
+
+    <!-- Add to homescreen for Chrome on Android. Fallback for manifest.json -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="application-name" content="АКС">
+
+    <!-- Add to homescreen for Safari on iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="apple-mobile-web-app-title" content="АКС">
+
+    <!-- Homescreen icons -->
+    <link rel="apple-touch-icon" href="images/wave.acn.group/manifest/icon-48x48.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/wave.acn.group/manifest/icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="96x96" href="images/wave.acn.group/manifest/icon-96x96.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="images/wave.acn.group/manifest/icon-144x144.png">
+    <!-- <link rel="apple-touch-icon" sizes="192x192" href="images/wave.acn.group/manifest/icon-192x192.png"> -->
+
+    <!-- Tile icon for Windows 8 (144x144 + tile color) -->
+    <meta name="msapplication-TileImage" content="images/wave.acn.group/manifest/icon-144x144.png">
+    <meta name="msapplication-TileColor" content="#3f51b5">
+    <meta name="msapplication-tap-highlight" content="no">
+
+    <!-- Default twitter cards -->
+    <meta name="twitter:card" content="АКС">
+    <meta name="twitter:site" content="@акс">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="АКС">
+    <meta property="og:image" content="images/wave.acn.group/manifest/icon-144x144.png" />
+
+    <!-- Performance tip: hint to the browser to start the handshake for the fonts site -->
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+
+    <!-- <script>
+      // Load and register pre-caching Service Worker
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', function() {
+          navigator.serviceWorker.register('service-worker.js', {
+            scope: '/',
+          });
+        });
+      }
+    </script> -->
+
+    <!-- Load webcomponents-loader.js to check and load any polyfills your browser needs -->
+    <!-- <script src="node_modules/@webcomponents/webcomponentsjs/webcomponents-loader.js"></script> -->
+
+    <style id="rootStyle">
+      body,html {
+        margin: 0;
+        padding: 0;
+        -webkit-font-smoothing: antialiased;
+        background-color: var(--background-color);
+        z-index: -1;
+      }
+      :root {
+        --color: #fff;
+        --primary-color: #1867c0;
+        --accent-color: #d63200;
+        --background: url(/images/wave.acn.group/backgrounds/fiber.jpg) center / cover no-repeat fixed;
+        --background-color: #263238;
+        --border-color: rgba(0, 0, 0, 0.12);
+        --border-radius: 0.25rem;
+        --font: condensed normal 12pt "Helvetica Neue", serif;
+      }
+    </style>
+    <style id="melodyGridStyle">
+      .melodyGrid {
+        --melody-template:  [start]               7.5fr
+                            [  semibiscroma-min ] 7.5fr
+                            [  biscroma-min     ] 15fr
+                            [ Cm semicroma-min  ] 30fr
+                            [ Dm octava-min     ] 20fr
+                            [ Em sexta-min      ] 40fr
+                            [ Fm quarta-min     ] 40fr
+                            [ Gm tertia-min     ] 32fr
+                            [ Am quinta-min     ] 24fr
+                            [ Bm secunda-min    ] 24fr
+                            [ H secunda         ]  24fr
+                            [ B secunda-maj     ]  24fr
+                            [ A quinta-maj      ]  32fr
+                            [ G tertia-maj      ]  40fr
+                            [ F quarta-maj      ]  40fr
+                            [ E sexta-maj       ]  20fr
+                            [ D octava-maj      ]  30fr
+                            [ C semicroma-maj   ]  15fr
+                            [  biscroma-maj     ]  7.5fr
+                            [  semibiscroma-maj ]  7.5fr [end];
+        display: grid;
+        grid-template-rows: var(--melody-template);
+        grid-template-columns: var(--melody-template);
+      }
+    </style>
+
+  </head>
+  
+  <body>
+    <script type="module" src="index.js"></script>
+
+    <noscript>
+      <h3>Так вышло, что для работы сайта необходим JavaScript</h3>
+      <p style="max-width: 20rem;">
+        Или включите JavaScript в своём браузере,
+        или подождите, когда будет готов серверный
+        рендеринг (ждать можно долго... и можно не дождаться...)
+      </p>
+    </noscript>
+  </body>
+</html>
